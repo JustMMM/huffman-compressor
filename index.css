@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Shantell Sans', cursive;
+}
+
+body {
+	background-color: rgba(240, 235, 216, 1);
+	height: 100vh;
+	width: 100%;
+}
+
+header {
+	background-color: rgba(116, 140, 171, 1);
+}
+
+main {
+	margin: 0 auto;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.25rem;
+}
+
+button {
+	width: 568px;
+	height: 60px;
+	line-height: 1.25rem;
+	font-size: 1.25rem;
+	border-radius: 10px;
+	background-color: rgba(29, 45, 68, 1);
+	cursor: pointer;
+	transition: 0.2s ease all;
+	color: white;
+}
+
+select {
+	width: 200px;
+	height: 30px;
+	line-height: 1rem;
+	font-size: 1rem;
+	border-radius: 20px;
+	text-align: center;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+input[type='file'] {
+	display: none;
+}
+
+.file-input {
+	color: rgba(29, 45, 68, 1);
+	border-radius: 10px;
+	background-color: rgba(255, 255, 254, 1);
+	display: inline-block;
+	padding: 6px 12px;
+	width: 200px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.form {
+	text-align: center;
+	margin: 50px 0;
+	color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(62, 92, 118, 1);
+	display: flex;
+	border-radius: 30px;
+	gap: 20px;
+	padding: 50px;
+	position: relative;
+}
+
+.form::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 46px;
+	top: -20px;
+	left: 0;
+	background: rgba(156, 181, 217, 1);
+}
+
+.side-wrapper {
+	background-color: rgba(153, 168, 188, 1);
+	padding: 20px;
+	border-radius: 30px;
+	height: 250px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}

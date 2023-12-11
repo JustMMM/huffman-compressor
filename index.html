@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Сжать файл</title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<header><h1>Жим-Жим</h1></header>
+		<main>
+			<div class="form">
+				<div class="side-wrapper toDecompress">
+					<p>Загрузите файл который надо сжать/распаковать:</p>
+					<label for="file-to-decompress" class="file-input">Загрузить файл</label>
+					<input type="file" id="file-to-decompress" class="compressed-window" />
+					<p>При распаковке нужен ключ. Загрузите его ниже:</p>
+					<label for="key-to-decompress" class="file-input">Загрузить ключ</label>
+					<input type="file" id="key-to-decompress" class="key-window" />
+					<select class="operationType" id="operationType">
+						<option value="compress">Сжатие</option>
+						<option value="decompress">Распаковка</option>
+					</select>
+				</div>
+			</div>
+			<button class="submit">Поехали!</button>
+		</main>
+	</body>
+	<script src="index.js"></script>
+</html>
